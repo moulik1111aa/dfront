@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import { Offcanvas, Button } from 'react-bootstrap';
 
-const socket = io.connect('http://localhost:3002');
+const socket = io.connect("https://mernback-fu4q.onrender.com");
 
 const ChatApp = () => {
   const [inputValue, setInputValue] = useState('');

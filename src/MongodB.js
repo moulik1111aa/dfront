@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import axios from 'axios';
 
-const socket = io.connect("http://localhost:3002", {
+const socket = io.connect("https://mernback-fu4q.onrender.com", {
   withCredentials: true,
   extraHeaders: {
-    "Access-Control-Allow-Origin": "http://localhost:3000, http://localhost:57886"
+    "Access-Control-Allow-Origin": "https://mernback-fu4q.onrender.com"
   }
 });
 
